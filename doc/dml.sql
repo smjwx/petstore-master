@@ -20,3 +20,14 @@ INSERT INTO products(category_id, title, pic, info, price, quantity, sales) VALU
 INSERT INTO products(category_id, title, pic, info, price, quantity, sales) VALUES (4,'Persian','/images/cat1.gif','Friendly house cat, doubles as a princess', 6.0, 10, 0);
 INSERT INTO products(category_id, title, pic, info, price, quantity, sales) VALUES (5,'Amazon Parrot','/images/bird2.gif','Great companion for up to 75 years', 6.0, 10, 0);
 INSERT INTO products(category_id, title, pic, info, price, quantity, sales) VALUES (5,'Finch','/images/bird1.gif','Great stress reliever', 6.0, 10, 0);
+
+
+create view v_product_category as
+ select p.id, p.title, price, info, quantity, sales, pic, c.title c_title
+ from products p, category c
+ where c.id = category_id ;
+ 
+ select * from v_product_category where c_title='fish';
+
+
+select * from products where title like '%dog%' or info like '%dog%';

@@ -4,8 +4,13 @@
 	margin: 0;
 }
 
+input {
+	padding: 
+}
+
+
 header{
-	background-color: #4a4;
+	background-color: lightgreen;
 	padding: 3em;
 }
 
@@ -27,21 +32,21 @@ footer{
 td a{
 		text-decoration: none;
 		background-color: #4a4;
-		color: #fff;
+		color: lightgreen;
 		
 	}
 	
 td a:hover{
-		background-color: #400;
+		background-color:green;
 	}
 	
 tr:nth-child(odd){
 	background-color: lightgray;
 	}
 tr:nth-child(even){
-	background-color: gray;
+	background-color: lightpink;
 	}
 	
 tr:hover{
-	background-color: white;
+	background-color: gray;
 }

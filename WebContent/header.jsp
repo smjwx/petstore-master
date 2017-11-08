@@ -7,6 +7,10 @@
     	<c:forEach items="${categories}" var="c">
     		<li>${c.title}</li>
     	</c:forEach>
+		<form action="search" method="get">
+		<input type="text" name="keyWords" placeholder="请输入关键字" />
+		<input type="submit" />
+		</form>  	
     	</menu>
     
     </header>
