@@ -43,7 +43,7 @@ public class CartServlet extends HttpServlet {
 		cart.addCart(product);
 		
 		//响应重定向
-		response.sendRedirect("cart.jsp");
+		response.sendRedirect("Cart.jsp");
 	}
 	
 }
